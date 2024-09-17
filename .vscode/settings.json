@@ -1,6 +1,7 @@
 {
     "prettier.bracketSameLine": true,
     "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
     "liveSassCompile.settings.compileOnWatch": true,
     "liveSassCompile.settings.watchOnLaunch": true,
     "liveSassCompile.settings.useNewCompiler": true,
@@ -24,5 +25,5 @@
             },
             "generateMap": false
         }
-    ],
+    ]
 }

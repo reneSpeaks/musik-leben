@@ -1,54 +1,54 @@
 @import "./../variables.scss";
 
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  width: 100%;
-  color: $darkPrimaryColor;
+    width: 100%;
+    color: $darkPrimaryColor;
 
-  z-index: 1;
+    z-index: 1;
 
-  img {
-    width: 250px;
-  }
+    img {
+        width: 250px;
+    }
 }
 
 .logo-content {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 
-  width: 100%;
-  max-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 nav {
-  a {
-    text-decoration: none;
-    transition: 0.2s ease;
-    color: $secondaryColor;
+    a {
+        text-decoration: none;
+        transition: 0.2s ease;
+        color: $secondaryColor;
 
-    &:hover {
-      color: $primaryColor;
+        &:hover {
+            color: $primaryColor;
+        }
     }
-  }
 
-  ul {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-  }
+    ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+    }
 
-  .active {
-    color: $darkPrimaryColor;
-  }
+    .active {
+        color: $darkPrimaryColor;
+    }
 }
 
 #menu-button,
 #close-menu-button {
-  display: none;
-  color: $secondaryColor;
-  cursor: pointer;
+    display: none;
+    color: $secondaryColor;
+    cursor: pointer;
 }

@@ -3,21 +3,21 @@
 @import "sections/gallery.scss";
 
 main {
-  height: 100vh;
-  height: 100svh;
-  width: 100%;
+    height: 100vh;
+    height: 100svh;
+    width: 100%;
 
-  // background-image: url("./../img/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    // background-image: url("./../img/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-  background-color: $darkPrimaryColor;
+    background-color: $darkPrimaryColor;
 }
 
 section {
-  position: relative;
-  height: 100vh;
-  height: 100svh;
-  width: 100%;
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+    width: 100%;
 }
