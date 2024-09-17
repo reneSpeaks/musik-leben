@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  height: 100svh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #373d20;
+  z-index: 1;
+}
+header img {
+  width: 250px;
+}
+
+.logo-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav a {
+  text-decoration: none;
+  transition: 0.2s ease;
+  color: #1b191d;
+}
+nav a:hover {
+  color: #bdbf01;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+nav .active {
+  color: #373d20;
+}
+
+#menu-button,
+#close-menu-button {
+  display: none;
+  color: #1b191d;
+  cursor: pointer;
+}
+
+#hero {
+  padding: 0 20px;
+}
+
+main {
+  height: 100vh;
+  height: 100svh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #373d20;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+aside {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  max-width: 300px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #bdbf01;
+  border: 1px solid #373d20;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+aside:hover {
+  transform: scale(1.1);
+}
+aside img {
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #373d20;
+  transition: transform 0.3s ease-in-out;
+  filter: grayscale(50%);
+}
+aside img:hover {
+  filter: grayscale(0%);
+}
+aside figure {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside figcaption {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside i {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  color: #bdbf01;
+  z-index: 1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #1b191d;
+}
+footer address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-style: normal;
+}
+footer a {
+  color: #fcfcfc;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+footer a:hover {
+  color: #bdbf01;
+}
+footer .details {
+  flex-direction: column;
+  margin: 14px;
+}
+footer .details i {
+  font-size: 2rem;
+  color: #bdbf01;
+  margin-bottom: 10px;
+}
