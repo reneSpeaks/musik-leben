@@ -1,0 +1,98 @@
+@import "./../../variables.scss";
+
+#carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 500px;
+    overflow: hidden;
+
+    background-color: $primaryColor;
+
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        line-height: 75vh;
+        font-size: 10vmin;
+    }
+
+    .slide {
+        text-decoration: none;
+        color: inherit;
+
+        float: left;
+        height: 100%;
+        width: 0;
+        transition: width 0.3s linear;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+
+        & > * {
+            transition: transform 0.15s linear;
+            transform: scale(0);
+        }
+    }
+
+    .labels {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+
+        label {
+            display: inline-block;
+            background-color: transparent;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            margin: 0.5vmim 2vmim;
+            border: 3px solid $tertiaryColor;
+        }
+    }
+    .one,
+    .two,
+    .three,
+    .four {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .one {
+        background-image: url(./../../../img/Will_Jacobs.jpg);
+    }
+    .two {
+        background-image: url(./../../../img/Vanja_Sky.jpg);
+    }
+    .three {
+        background-image: url(./../../../img/Stone_senate.png);
+    }
+    .four {
+        background-image: url(./../../../img/BS.jpg);
+    }
+
+    #slide-btn-1:checked ~ .one,
+    #slide-btn-2:checked ~ .two,
+    #slide-btn-3:checked ~ .three,
+    #slide-btn-4:checked ~ .four {
+        width: 100%;
+    }
+
+    #slide-btn-1:checked ~ .one > *,
+    #slide-btn-2:checked ~ .two > *,
+    #slide-btn-3:checked ~ .three > *,
+    #slide-btn-4:checked ~ .four > * {
+        transform: scale(1);
+    }
+
+    #slide-btn-1:checked ~ .labels label[for="slide-btn-1"],
+    #slide-btn-2:checked ~ .labels label[for="slide-btn-2"],
+    #slide-btn-3:checked ~ .labels label[for="slide-btn-3"],
+    #slide-btn-4:checked ~ .labels label[for="slide-btn-4"] {
+        background-color: $tertiaryColor;
+    }
+
+    [type="radio"] {
+        display: none;
+    }
+}

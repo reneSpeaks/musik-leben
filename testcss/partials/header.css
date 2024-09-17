@@ -3,11 +3,10 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  color: #373d20;
   z-index: 1;
 }
 header img {
-  width: 250px;
+  max-width: 250px;
 }
 
 .logo-content {

@@ -6,12 +6,11 @@ header {
     align-items: center;
 
     width: 100%;
-    color: $darkPrimaryColor;
 
     z-index: 1;
 
     img {
-        width: 250px;
+        max-width: 250px;
     }
 }
 

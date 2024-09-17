@@ -6,6 +6,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+::selection {
+  color: #fcfcfc;
+  background-color: #373d20;
+}
+
 html,
 body {
   height: 100vh;
@@ -23,11 +28,10 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  color: #373d20;
   z-index: 1;
 }
 header img {
-  width: 250px;
+  max-width: 250px;
 }
 
 .logo-content {
@@ -64,54 +68,108 @@ nav .active {
 
 #hero {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 20px;
+  background-color: #bdbf01;
 }
 
-#gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
-  max-width: 1200px;
-}
-#gallery figure {
-  background-color: #fcfcfc;
-  padding: 10px;
-  max-width: 370px;
-  max-height: 220px;
-  aspect-ratio: 37/22;
-  filter: drop-shadow(2px 3px 10px #1b191d);
-  transform: scale(1);
-  z-index: 0;
-  transition: all 0.4s ease;
-}
-#gallery figure:hover {
-  transform: scale(1.1);
-  z-index: 1;
-  transition: all 0.4s ease;
-}
-#gallery figure img {
+#carousel {
+  position: relative;
   width: 100%;
-  max-width: 350px;
-  max-height: 200px;
-  object-fit: cover;
+  max-width: 1200px;
+  max-height: 500px;
+  overflow: hidden;
+  background-color: #bdbf01;
+}
+#carousel h1 {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 75vh;
+  font-size: 10vmin;
+}
+#carousel .slide {
+  text-decoration: none;
+  color: inherit;
+  float: left;
+  height: 100%;
+  width: 0;
+  transition: width 0.3s linear;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#carousel .slide > * {
+  transition: transform 0.15s linear;
+  transform: scale(0);
+}
+#carousel .labels {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+#carousel .labels label {
+  display: inline-block;
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  margin: 0.5vmim 2vmim;
+  border: 3px solid #fcfcfc;
+}
+#carousel .one,
+#carousel .two,
+#carousel .three,
+#carousel .four {
+  background-position: center center;
+  background-size: cover;
+}
+#carousel .one {
+  background-image: url(./../../../img/Will_Jacobs.jpg);
+}
+#carousel .two {
+  background-image: url(./../../../img/Vanja_Sky.jpg);
+}
+#carousel .three {
+  background-image: url(./../../../img/Stone_senate.png);
+}
+#carousel .four {
+  background-image: url(./../../../img/BS.jpg);
+}
+#carousel #slide-btn-1:checked ~ .one,
+#carousel #slide-btn-2:checked ~ .two,
+#carousel #slide-btn-3:checked ~ .three,
+#carousel #slide-btn-4:checked ~ .four {
+  width: 100%;
+}
+#carousel #slide-btn-1:checked ~ .one > *,
+#carousel #slide-btn-2:checked ~ .two > *,
+#carousel #slide-btn-3:checked ~ .three > *,
+#carousel #slide-btn-4:checked ~ .four > * {
+  transform: scale(1);
+}
+#carousel #slide-btn-1:checked ~ .labels label[for=slide-btn-1],
+#carousel #slide-btn-2:checked ~ .labels label[for=slide-btn-2],
+#carousel #slide-btn-3:checked ~ .labels label[for=slide-btn-3],
+#carousel #slide-btn-4:checked ~ .labels label[for=slide-btn-4] {
+  background-color: #fcfcfc;
+}
+#carousel [type=radio] {
+  display: none;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 100vh;
   height: 100svh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #373d20;
 }
 
 section {
   position: relative;
-  height: 100vh;
-  height: 100svh;
   width: 100%;
 }
 

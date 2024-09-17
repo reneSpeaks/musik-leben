@@ -6,6 +6,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+::selection {
+  color: #fcfcfc;
+  background-color: #373d20;
+}
+
 html,
 body {
   height: 100vh;

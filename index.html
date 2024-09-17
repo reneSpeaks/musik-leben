@@ -12,7 +12,7 @@
     <body>
         <header>
             <div class="logo-content">
-                <a href="#"><img src="img/Musikleben_Logo.jpg" alt="Musik Leben e.V. Logo" /></a>
+                <a href="#"><img src="img/Musikleben_Logo.png" alt="Musik Leben e.V. Logo" /></a>
                 <p>Events, die verbinden und bewegen.</p>
             </div>
 
@@ -30,37 +30,46 @@
 
         <main>
             <section id="hero">
-                <h1>THIS IS THE MUSIC MAN!</h1>
-                <!-- <aside>
-                    <figure>
-                        <i class="fas fa-times"></i>
-                        <img
-                            src="img/Stone_senate.png"
-                            alt="The Band, Stone Senate, standing in front of their tour bus on an airfield." />
-                        <figcaption>Stone Senate</figcaption>
-                    </figure>
-                </aside> -->
-                <section id="gallery">
-                    <figure>
-                        <img
-                            src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg"
-                            alt="Concert crowd cheering while ribbons fly and the lightshow hits a crescendo" />
-                        <figcaption>Event 1</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="https://images.pexels.com/photos/89909/pexels-photo-89909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="A man at sunrise on an open field, lifting his guitar with arms wide open" />
-                        <figcaption>Event 2</figcaption>
-                    </figure>
-                    <figure>
-                        <img
-                            src="https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="Lead singer, singing and playing his guitar in grayscale" />
-                        <!-- <figcaption>Event 3</figcaption> -->
-                    </figure>
+                <section id="carousel">
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="slide-btn-1"
+                        class="class-btn"
+                        onclick="setSlide();"
+                        checked />
+                    <input type="radio" name="carousel" id="slide-btn-2" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-3" class="class-btn" onclick="setSlide();" />
+                    <input type="radio" name="carousel" id="slide-btn-4" class="class-btn" onclick="setSlide();" />
+
+                    <div class="slide one parallax-effect"><h1>Will Jacobs</h1></div>
+                    <div class="slide two parallax-effect"><h1>Vanja Sky</h1></div>
+                    <div class="slide three parallax-effect"><h1>Stone Senate</h1></div>
+                    <div class="slide four parallax-effect"><h1>Brown Sugar</h1></div>
+
+                    <div class="labels">
+                        <label for="slide-btn-1"></label>
+                        <label for="slide-btn-2"></label>
+                        <label for="slide-btn-3"></label>
+                        <label for="slide-btn-4"></label>
+                    </div>
                 </section>
             </section>
+            <article>
+                <h1>Test</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur distinctio adipisci optio porro
+                    sunt quaerat eius cumque deleniti ipsam, magni dolores numquam? Omnis in minus temporibus, corrupti
+                    sint blanditiis. Dolorum repudiandae, nostrum perspiciatis repellat necessitatibus, beatae minus
+                    reiciendis mollitia, quia sed assumenda distinctio sint asperiores pariatur quisquam totam aperiam
+                    fuga? Fugiat dolores iste suscipit inventore dolorum distinctio itaque! Sit quae architecto ducimus,
+                    voluptatem, animi iusto perspiciatis quasi voluptatum inventore tempora numquam modi ad magnam
+                    officiis aliquam at dolorum maxime similique! Quibusdam fuga quos laborum aliquam repellendus?
+                    Expedita, culpa voluptatum, reprehenderit sed id tempore excepturi dicta saepe necessitatibus
+                    debitis qui ullam? Deserunt saepe cupiditate corrupti numquam quaerat expedita dolore explicabo hic?
+                    Suscipit voluptatum deserunt vero incidunt, voluptas aut architecto possimus fugit!
+                </p>
+            </article>
         </main>
 
         <footer>
@@ -91,5 +100,7 @@
                 <a href="#">Privacy Policy</a>
             </span>
         </footer>
+
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
