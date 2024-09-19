@@ -6,6 +6,7 @@ header {
     align-items: center;
 
     width: 100%;
+    background-color: $darkPrimaryColor;
 
     z-index: 1;
 
@@ -24,6 +25,8 @@ header {
 }
 
 nav {
+    display: none;
+
     a {
         text-decoration: none;
         transition: 0.2s ease;
