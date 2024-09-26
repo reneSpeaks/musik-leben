@@ -33,4 +33,8 @@ h6 {
   overflow-wrap: break-word;
 }
 
+#hero {
+  background-image: url("/img/layout/gabriel-gurrola-2UuhMZEChdc-unsplash.jpg");
+}
+
 /*# sourceMappingURL=styles.css.map */
