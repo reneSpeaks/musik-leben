@@ -1,15 +1,15 @@
-var int;
+let interval;
 function setSlide() {
-    clearInterval(int);
-    int = setInterval(function () {
-        var btns = document.getElementsByName("carousel");
-        for (var i = 0; i < btns.length; i++) {
-            if (btns[i].checked) {
-                btns[i].checked = false;
-                if (i + 1 == btns.length) {
-                    btns[0].checked = true;
+    clearInterval(interval);
+    interval = setInterval(function () {
+        let buttons = document.getElementsByName("carousel");
+        for (let i = 0; i < buttons.length; i++) {
+            if (buttons[i].checked) {
+                buttons[i].checked = false;
+                if (i + 1 === buttons.length) {
+                    buttons[0].checked = true;
                 } else {
-                    btns[i + 1].checked = true;
+                    buttons[i + 1].checked = true;
                 }
                 return;
             }
