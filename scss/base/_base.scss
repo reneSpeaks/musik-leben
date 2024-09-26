@@ -1,25 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 @import "../variables";
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
+
 
 ::selection {
     color: $tertiaryColor;
     background-color: $darkPrimaryColor;
 }
 
-html,
+html {
+    font-family: "Poppins", sans-serif;
+}
 body {
-    height: 100svh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
