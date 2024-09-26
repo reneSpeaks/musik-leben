@@ -1,4 +1,4 @@
-@import "./../../variables.scss";
+@import "../../variables";
 
 #carousel {
     position: relative;
@@ -68,7 +68,7 @@
         background-image: url(./../../../img/Stone_senate.png);
     }
     .four {
-        background-image: url(./../../../img/BS.jpg);
+        background-image: url(../../../img/acts/BS.jpg);
     }
 
     #slide-btn-1:checked ~ .one,

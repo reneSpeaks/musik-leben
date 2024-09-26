@@ -1,6 +1,6 @@
-@import "./../variables.scss";
-@import "sections/hero.scss";
-@import "sections/carousel.scss";
+@import "../variables";
+@import "sections/hero";
+@import "sections/carousel";
 
 main {
     display: flex;
