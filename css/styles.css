@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-
 *,
 *::before,
 *::after {
@@ -12,7 +11,7 @@
 
 ::selection {
   color: #fcfcfc;
-  background-color: #1b191d;
+  background-color: #373d20;
 }
 
 html {
