@@ -7,14 +7,46 @@
 	<title>Musik Leben e.V. - Events, die verbinden und bewegen</title>
 
 	<link rel="stylesheet" href="css/styles.css" />
+
+	<link rel="stylesheet" href="css/tw/output.css" />
 	<!--FONT AWESOME CDN INCLUDE-->
 	<!--suppress JSUnresolvedLibraryURL -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
+		<script>
+			tailwind.config = {
+				content: ["./src/**/*.{html,js}"],
+				theme: {
+					extend: {
+						colors: {
+							primary: "#bdbf01",
+							secondary: "#373d20",
+							accent: "#CDE895",
+							background: "#1b191d",
+							light: "#fcfcfc",
+							attention: "#fb3640",
+						},
+						fontFamily: {
+							primary: ["Primary", "sans-serif"],
+							handwriting: ["Handwriting", "sans-serif"],
+						},
+					},
+				}
+			};
+		</script>
+
 </head>
 <body>
-<header>
-	<!--HEADER MY GUY!-->
+<header class="flex justify-center">
+	<a href="#"><img src="/img/logo/Musikleben_Logo.png" alt="Musik Leben e.V. Logo"></a>
+	<nav class="absolute bottom-10 flex left-0 w-svw max-h-14 items-center justify-center gap-4 z-50 bg-accent bg-opacity-50">
+		<ul class="flex flex-row gap-4">
+			<li><a href="#">Start</a></li>
+			<li><a href="#">Über Uns</a></li>
+			<li><a href="#">Veranstaltungen</a></li>
+			<li><a href="#">Kontakt</a></li>
+		</ul>
+	</nav>
 </header>
 
 <main>
