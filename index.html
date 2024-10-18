@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
 	<meta charset="UTF-8" />
@@ -6,27 +6,21 @@
 
 	<title>Musik Leben e.V. - Events, die verbinden und bewegen</title>
 
-	<!-- SCSS OUTPUT FILE -->
-	<link rel="stylesheet" href="css/styles.css" />
-
-	<!-- TAILWIND CSS OUTPUT FILE -->
-	<link rel="stylesheet" href="css/tw/output.css" />
-
-	<!-- TAILWIND CSS INCLUDE AND THEME SETUP -->
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="js/tw/tailwind.js"></script>
-
 	<!-- FONT AWESOME CDN INCLUDE -->
-	<!--suppress JSUnresolvedLibraryURL -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+	<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+	/>
 </head>
-<body>
-<header class="flex justify-center">
-	<a href="#"><img src="/img/logo/Musikleben_Logo.png" alt="Musik Leben e.V. Logo" /></a>
+<body class="flex flex-col relative">
+<header id="header" class="absolute w-screen h-screen">
+	<a href="#"> <img src="src/img/logo/Musikleben_Logo_LIGHT.png"
+					  alt="Musik Leben e.V. Ludwigsfelde"
+					  class="absolute z-50 left-1/2 -translate-x-2/4 max-h-16" /> </a>
 
 	<!-- ABSOLUTE POSITIONED FLEXIBLE NAV BAR -->
-	<nav class="absolute bottom-10 flex left-0 w-svw max-h-14 items-center justify-center gap-4 z-50 bg-accent bg-opacity-50">
-		<ul class="flex flex-row gap-4">
+	<nav class="absolute bottom-10 flex left-0 w-svw max-h-14 items-center justify-center z-50 text-white bg-opacity-50">
+		<ul class="flex flex-row gap-10">
 			<li><a href="#">Start</a></li>
 			<li><a href="#">Über Uns</a></li>
 			<li><a href="#">Veranstaltungen</a></li>
@@ -36,9 +30,18 @@
 </header>
 
 <main>
-	<section id="hero" class="bg-cover bg-center bg-no-repeat w-svw h-svh">
+	<section id="hero" class="bg-cover bg-center bg-no-repeat h-screen p-8">
+		<div class="content-container w-full max-w-full mx-auto">
+			<div class="grid auto-cols-fr gap-x-24 gap-y-11 grid-rows-[auto] grid-cols-2">
+				<h1 class="tracking-tight text-5xl font-medium">
+
+				</h1>
+			</div>
+		</div>
+
 		<!-- HERO SECTION HERE PLEASE -->
 	</section>
+	<section id="second-section" class="h-screen bg-accent"></section>
 </main>
 
 <footer>
@@ -46,6 +49,7 @@
 </footer>
 
 <!-- FURTHER CUSTOM SCRIPTS -->
-<script type="text/javascript" src="js/scripts.js" defer></script>
+<script type="module" src="/src/main.jsx"></script>
+<script type="text/javascript" src="/src/scripts/scripts.js" defer></script>
 </body>
 </html>

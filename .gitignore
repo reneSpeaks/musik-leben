@@ -1,10 +1,16 @@
-# VSCode
+# EDITOR DIRECTORIES AND FILES
 .vscode/*
-.idea/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# Node Folder
-node_modules/*
-
-# Package Files after Tailwind Install
-package-lock.json
-package.json
+# Node Folders
+node_modules
+dist
+dist-ssr
+*.local
